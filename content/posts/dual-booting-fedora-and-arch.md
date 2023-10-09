@@ -8,8 +8,9 @@ These are some notes on how to use Fedora's GRUB to dual boot additional Linux d
 
 I already had Arch installed, but I wanted to install Fedora and use Fedora's boot loader. Fedora is always renaming the kernel and creating additional GRUB entries, so it makes sense to use Fedora's boot loader and just add the Arch kernel as a static entry where the name doesn't change (reword that).
 
+## Preparation
 So I booted Systemrescuecd and used Gparted to shrink my arch rootfs and I deleted my EFI partition, which I had been mounting to /boot/efi. My /boot is on the same partition as my rootfs.
-
+I also moved my /home to a separate partition, which I think some people have already done. 
 
 Later I realized that I probably could have skipped sysrescuecd done this with the Fedora installer since it is a live environment.
 
